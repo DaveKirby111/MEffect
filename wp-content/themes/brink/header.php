@@ -58,7 +58,7 @@ $apple_icon = get_field('apple_icon', 'option');
 						<a href="javascript:void(0);" class="mobile-trigger" aria-label="Mobile Menu Toggle"><i class="fa fa-bars" aria-hidden="true" title="Menu"></i></a>
 					</div>
 					<div class="col-12 col-lg-8">
-						<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_class' => 'nav right pt-4 pt-lg-0', 'container' => 'ul')); ?>
+						<?php wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'nav right pt-4 pt-lg-0', 'container' => 'ul')); ?>
 					</div>
 				</div>
 			</div>
@@ -82,4 +82,4 @@ $apple_icon = get_field('apple_icon', 'option');
 
 		</header><!-- #masthead -->
 
-		<div id="content" class="site-content">
+		<div id="content" class="site-content container-fluid d-flex flex-column min-vh-100">

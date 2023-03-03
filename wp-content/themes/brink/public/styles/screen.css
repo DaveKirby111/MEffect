@@ -9300,6 +9300,7 @@ h3 {
     09 - SUBPAGE STYLES
     10 - FOOTER STYLES
     11 - PLUGIN STYLES
+    12 - MY STYLES
 
     FONTS USED
     Main Copy: Sarabun, sans-serif
@@ -10950,5 +10951,15 @@ ul.sub-menu li a {
 
 /* 11 = PLUGIN STYLES
 ---------------------------------------------------------- */
+/* 12 = MY STYLES 
+----------------------------------------------------------*/
+/* HEADER */
+/* NAV */
+/* CONTENT */
+h1 {
+  text-align: center;
+}
+
+/* FOOTER */
 
 /*# sourceMappingURL=screen.css.map*/

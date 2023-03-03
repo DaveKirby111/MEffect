@@ -52,7 +52,7 @@ if (!function_exists('kin_setup')) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(array(
-			'primary_navigation' => esc_html__('Primary', 'brink'),
+			'primary_navigation' => esc_html__('primary_navigation', 'brink'),
 		));
 
 		/*
@@ -153,6 +153,7 @@ add_action('widgets_init', 'kin_widgets_init');
  */
 function kin_scripts()
 {
+
 	// Set from child theme functions files
 	$version = _KIN_VERSION;
 	wp_enqueue_style('kin-style', get_stylesheet_uri());

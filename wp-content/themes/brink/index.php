@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area flex-grow-1" >
 		<main id="main" class="site-main">
 
 		<?php
