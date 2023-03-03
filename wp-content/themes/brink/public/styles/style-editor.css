@@ -1,1 +1,16 @@
-.wp-block{max-width:85%}.wp-block[data-align=wide]{max-width:100%}.wp-block[data-align=full]{max-width:none}
+/* Main column width */
+.wp-block {
+  max-width: 85%;
+}
+
+/* Width of "wide" blocks */
+.wp-block[data-align=wide] {
+  max-width: 100%;
+}
+
+/* Width of "full-wide" blocks */
+.wp-block[data-align=full] {
+  max-width: none;
+}
+
+/*# sourceMappingURL=style-editor.css.map*/

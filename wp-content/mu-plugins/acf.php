@@ -58,6 +58,7 @@ add_action('admin_menu', function () {
     $admins = [
         'kinadmin',
         'admin',
+        'DKirby',
     ];
 
     $current_user = wp_get_current_user();

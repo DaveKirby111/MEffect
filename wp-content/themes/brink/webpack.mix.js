@@ -5,7 +5,7 @@ mix.setPublicPath("./public");
 
 // Browsersync
 mix.browserSync({
-  proxy: "https://brink.test", // Change to your local dev domain
+  proxy: "https://meffect.test", // Change to your local dev domain
   open: false, // Whether or not a brower window opens on every start
   reloadOnRestart: true, // Whether or not existing bs browser windows will refresh when mix is restarted
   files: ["**/*.php", "public/**/*.js", "public/**/*.css"],
