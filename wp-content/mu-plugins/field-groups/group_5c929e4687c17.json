@@ -1,0 +1,141 @@
+{
+    "key": "group_5c929e4687c17",
+    "title": "Block : Post Type Archive",
+    "fields": [
+        {
+            "key": "field_5c929e5171e81",
+            "label": "Archive Post Type",
+            "name": "archive_post_type",
+            "type": "post_type",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "post_type": []
+        },
+        {
+            "key": "field_5c929ecd71e82",
+            "label": "Archive Layout",
+            "name": "archive_layout",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "default": "Default Layout",
+                "horizontal": "Horizontal Layout",
+                "vertical": "Vertical Layout",
+                "graphic": "Graphic Layout"
+            },
+            "default_value": [
+                "default"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5c92a717ef257",
+            "label": "Archive Posts Count",
+            "name": "archive_posts_count",
+            "type": "number",
+            "instructions": "Select the number of posts you would like to display on this page. Use -1 to show all posts.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33.33333",
+                "class": "",
+                "id": ""
+            },
+            "default_value": -1,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": -1,
+            "max": "",
+            "step": 1
+        },
+        {
+            "key": "field_5c92a7d1ef258",
+            "label": "Archive Posts Order",
+            "name": "archive_posts_order",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33.33333",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "ASC": "Ascending",
+                "DESC": "Descending"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5c92a85cef259",
+            "label": "Archive Posts Order By",
+            "name": "archive_posts_order_by",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33.33333",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "title": "Title",
+                "date": "Date",
+                "rand": "Random"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/post-type-archive"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1656339054
+}

@@ -1,0 +1,105 @@
+// Add Box Sizing
+@mixin box-sizing($box-size) {
+	-webkit-box-sizing: $box-size;
+	-moz-box-sizing: $box-size;
+	box-sizing: $box-size;
+}
+
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+// Column width with margin
+@mixin column-width($numberColumns: 3) {
+	width: map-get( $columns, $numberColumns ) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+// Generate Background Color Classes
+@mixin generate-backgrounds($bg-colors) {
+	@each $class, $color in $bg-colors {
+		.bg-#{$class} { background-color: #{$color}; }
+	}
+}
+
+// Generate Text Color Classes
+@mixin generate-text-colors($t-colors) {
+	@each $class, $color in $t-colors {
+		.t-#{$class} { color: #{$color}; }
+	}
+}
+
+// Generate Button Color Classes
+@mixin generate-btns($btn-colors) {
+	@each $class, $color in $btn-colors {
+		.btn-#{$class} { background-color: #{$color}; }
+	}
+}
+
+// Generate Outline Button Color Classes
+@mixin generate-outline-btns($outline-btn-colors) {
+	@each $class, $color in $bg-colors {
+		.outline-btn-#{$class} { 
+			color: #{$color}; 
+
+			&:hover {background-color: #{$color}; }
+		}
+	}
+}
+
+// Transition Master
+@mixin transition($args...) {
+	-webkit-transition: $args;
+	-moz-transition: $args;
+	-ms-transition: $args;
+	-o-transition: $args;
+	transition: $args;
+}
+
+// Transform
+@mixin transform($args...) {
+	-webkit-transform: $args;
+	-moz-transform: $args;
+	-ms-transform: $args;
+	-o-transform: $args;
+	transform: $args;
+}
+
+// Create Breakpoints
+@mixin break($point) {
+	@media screen and (max-width: $point ){ @content ; }
+}
+
+@mixin breakmin($point){
+	@media screen and (min-width: $point ){ @content ; }
+}
+
+@mixin printmin($point){
+	@media print and (min-width: $point ){ @content ; }
+}
+
+// Create IE10+ Fixes
+@mixin ie10fix(){
+	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+		@content ;
+	}
+}

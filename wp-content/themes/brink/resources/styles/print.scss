@@ -1,0 +1,143 @@
+/*!
+Theme Name: Client Theme Name
+Author: Kinetic
+Author URI: https://www.kinetic.com
+Version: 1.0
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------*/
+
+// Import Settings and Variables
+@import '~bootstrap/scss/bootstrap';
+@import "partials/variables.site";
+
+// Import Mixin Tools and Functions
+@import "partials/tools.mixins";
+
+/*
+    00 - NORMALIZE
+    01 - BASE STYLES
+    02 - LAYOUT & UTILITY STYLES
+    03 - TEXT COLORS
+    04 - PRINT ADJUSTMENTS
+    05 - DO NOT DISPLAY
+
+---------------------------------------------------------- */
+
+/* 00 = NORMALIZE
+---------------------------------------------------------- */
+@import "normalize";
+
+/* 01 = BASE STYLES
+---------------------------------------------------------- */
+
+*,
+*::before,
+*::after { @include box-sizing(border-box); }
+
+* {
+    color: #444 !important;
+}
+
+body {
+    background-color: $white;
+    font-family: $copy-font-stack;
+    font-size: $base-font-size;
+    color: #444;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $header-font-stack;
+}
+
+h1 {font-size: $h1-size;}
+h2 {font-size: $h2-size;}
+h3 {font-size: $h3-size;}
+h4 {font-size: $h4-size;}
+h5 {font-size: $h5-size;}
+h6 {font-size: $h6-size;}
+
+p {line-height: 24px;}
+
+a {text-decoration: none;}
+
+ul,
+ol {
+    padding-left: 2.5em;
+    margin-left: 0;
+}
+
+blockquote {
+    margin: 0;
+    box-shadow: inset 0 0 0 0 #e2e4e7;
+    border: none;
+    border-left: 4px solid #000;
+    padding-left: 1em;
+}
+
+/* 02 = LAYOUT & UTILITY STYLES
+---------------------------------------------------------- */
+
+.global-width {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+.section {
+    clear: both;
+    margin: 0;
+    padding: 0;
+}
+
+.section::after {
+    @include clearfix;
+    @include clearfix-after;
+}
+
+.right,
+.alignright {float: right;}
+
+.left,
+.alignleft {float: left;}
+
+.clear {clear: both;}
+
+.gigantic {font-size: $gigantic;}
+.huge {font-size: $h1-size;}
+.large {font-size: $h2-size;}
+.big {font-size: $h3-size;}
+.normal {font-size: $h4-size;}
+.small {font-size: $h5-size;}
+.tiny {font-size: $h6-size;}
+
+.caps {text-transform: uppercase;}
+.heavy {font-weight: 900;}
+
+/* 03 = TEXT COLORS
+---------------------------------------------------------- */
+@include generate-text-colors($colors);
+
+/* 04 = PRINT ADJUSTMENTS
+---------------------------------------------------------- */
+.footer-wrap {
+    color: #444;
+}
+
+/* 05 = DO NOT DISPLAY
+---------------------------------------------------------- */
+.preheader,
+.footer,
+#menu-main-menu,
+.search-box,
+.logo.screen,
+.hero-rotator {
+    display: none;
+}

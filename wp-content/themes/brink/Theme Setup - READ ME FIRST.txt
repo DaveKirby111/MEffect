@@ -1,0 +1,54 @@
+
+----------------------
+ INTRODUCTION
+----------------------
+
+Welcome to our Wordpress starter theme. Edit this theme however you like to fit the client's needs. This theme includes Bootstrap v4 CSS/SCSS framework, from which components can be selected or removed, and is based on the Underscores Wordpress Starter Theme (_s). This theme is built with SASS/SCSS and includes modern Wordpress conventions and practices. This readme includes some basic info on how to edit this theme to better suit your needs and keep a good standard for our development.
+
+
+----------------------
+ SASS/SCSS
+----------------------
+
+First and foremost, this theme is built with SASS/SCSS. This will require you to have a SASS/SCSS processor on your machine. You can do this using command line tools (SASS CLI, Grunt, Gulp, etc.) or you can use a GUI processor (Koala App, Prepros App, CodeKit, etc.).
+
+// Settings //
+To keep a good standard for our development, we use settings to make our final products more uniform. Here are a few settings to make sure you include in your processor: 
+
+    1) We use the .scss extension and output method, not .sass. Make sure you are saving files in this format.
+    2) Include Source Maps for all compiled css. This will make debugging easier.
+    3) Include Prefixing/Autoprefixing on all CSS3+ styles declarations. Prefixing settings should be set to support the last 3-5 browsers.
+    4) Unless specifically needed, we process with Node Sass (faster processing time).
+    5) CSS output style should be compact and, unless required otherwise, should be minified.
+    6) If using a GUI, consider exporting the config file to make it easier for others to use your settings. This theme include a Prepros 6 config file.
+    7) Finally, make sure your output folder for compiled css is the CSS folder in theme root. Your source map should be included there as well. Keeping the SCSS and CSS folders separate makes it easier to debug and to make updates to a client's site.
+
+
+// Feature / Plugin Specific Styles //
+To make edits and debugging easier, create different subfolders and master scss files in the SASS folder for feature or plugin specific styles. Keeping these separate will help the theme maintain its scalability and ease of use. Export all compiled css and source maps to the CSS folder.
+
+
+----------------------
+ BOOTSTRAP SCSS
+----------------------
+
+As stated above, this theme includes the Bootstrap CSS/SCSS framework and also includes a bootstrap.master file that can be edited to include different components of bootstrap. Make sure to exclude any components you do not need to keep the final css files as small as possible.
+
+// Editing the Bootstrap Master File //
+To include or exclude components from Bootstrap, open "/sass/bootstrap/_bootstrap.master.scss" and comment or uncomment components you need. Do not comment out any components that are marked required, since these include necessary functions, mixins, variables, and layouts needed for the site. Finally make sure to include this file in your master sass files.
+
+
+----------------------
+ BOOTSTRAP JS
+----------------------
+
+For any selected components from Bootstrap, you will also need to include the javascript files for them. Open "/js/bootstrap/index.js" and comment or uncommeent components you need. You will need to comment/uncomment lines in the import section at the top and the export section at the bottom.
+
+
+----------------------
+ ENQUEUING SCRIPTS & STYLES
+----------------------
+
+Finally, make sure to enqueue any and all css and js files in the functions.php file. Do not include these files in the header or footer. Enqueuing will make sure that the loading of these files is done correctly and will also give us more control on how these files get included on individual pages. For more info on how enqueuing works, visit https://developer.wordpress.org/themes/basics/including-css-javascript/. If you do not need any additional components from Bootstrap, do not enqueue the index.js file.
+
+

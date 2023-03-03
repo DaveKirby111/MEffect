@@ -1,0 +1,32 @@
+# Ignore everything in the root except the "wp-content" directory.
+/*
+!.gitignore
+!wp-content/
+!deploy/
+!readme.md
+
+# Keep these files out of the repo
+/wp-content/plugins
+/wp-content/themes/twenty*
+/wp-content/upgrade
+/wp-content/uploads
+node_modules
+*.sql
+
+# Plugins
+/wp-content/mu-plugins/mu-iwp-client.php
+
+# Cache and maintenance
+/wp-content/advanced-cache.php
+/wp-content/cache/*
+/wp-content/db.php
+/wp-content/maintenance*
+
+# Hidden files
+*.DS_Store
+*Thumbs.db
+*~imageoptim*
+
+# Exceptions
+!/wp-content/plugins/wp-sync-db-master
+!/wp-content/plugins/wp-sync-db-media-files-master
