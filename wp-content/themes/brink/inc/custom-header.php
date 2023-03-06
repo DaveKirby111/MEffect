@@ -67,6 +67,6 @@ if ( ! function_exists( 'kin_header_style' ) ) :
 			}
 		<?php endif; ?>
 		</style>
-		<?php
+		<?php 
 	}
 endif;

@@ -10230,7 +10230,6 @@ form.search-form .search-submit:hover {
   padding: 10px 0;
 }
 .nav li a:hover {
-  color: #00acee;
   text-decoration: none;
 }
 @media screen and (min-width: 992px) {
@@ -10893,10 +10892,6 @@ ul.sub-menu li a {
 
 /* 10 = FOOTER STYLES
 ---------------------------------------------------------- */
-.footer {
-  margin-top: 50px;
-}
-
 .footer-wrap {
   padding: 15px;
 }
@@ -10954,12 +10949,48 @@ ul.sub-menu li a {
 /* 12 = MY STYLES 
 ----------------------------------------------------------*/
 /* HEADER */
+header {
+  margin-bottom: 20px;
+  background-image: url("../../public/images/sunrise-copy2.jpg");
+  background-size: 100% auto;
+}
+header > .row {
+  width: 100% !important;
+}
+@media screen and (min-width: 992px) {
+  header {
+    background-size: 100% auto;
+  }
+}
+
 /* NAV */
 /* CONTENT */
-h1 {
+.site-content h1 {
   text-align: center;
+  color: white;
+}
+.site-content p {
+  color: white;
+}
+
+.page-id-6 h1 {
+  display: none;
 }
 
 /* FOOTER */
+.footer {
+  background-color: black;
+}
+
+.footer-contact {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.n7 {
+  background-image: url("../../public/images/n7-stripe copy.jpg");
+  background-size: 100% auto;
+  height: 100px;
+}
 
 /*# sourceMappingURL=screen.css.map*/

@@ -572,7 +572,7 @@ form.search-form {
             padding: 10px 0;
 
             &:hover {
-                color: $primary-color;
+                // color: $primary-color;
                 text-decoration: none;
             }
 
@@ -1287,9 +1287,7 @@ ul.sub-menu {
 
 /* 10 = FOOTER STYLES
 ---------------------------------------------------------- */
-.footer {
-    margin-top: 50px;
-}
+
 .footer-wrap {
     padding: 15px;
     & a {
@@ -1355,12 +1353,60 @@ ul.sub-menu {
 
 /* HEADER */
 
+header {
+    margin-bottom: 20px;
+    background-image: url("../../public/images/sunrise-copy2.jpg");
+    background-size: 100% auto;
+
+    & > .row {
+        width: 100% !important;
+    }
+
+    @media screen and (min-width: 992px) {
+        & {
+           background-size: 100% auto;
+        }
+    }
+
+}
+
 /* NAV */
 
 /* CONTENT */
 
-h1 {
-    text-align: center;
+.site-content {
+
+    h1 {
+        text-align: center;
+        color: white;
+    }
+
+    p {
+        color: white;
+    }
+}
+
+
+
+.page-id-6 {
+    h1 {
+        display: none;
+    }
 }
 
 /* FOOTER */
+
+.footer {
+    background-color: black;
+}
+
+.footer-contact {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.n7 {
+    background-image: url("../../public/images/n7-stripe\ copy.jpg");
+    background-size: 100% auto;
+    height: 100px;
+}

@@ -18,10 +18,10 @@
         <div class="group row">
             <div class="col-12 col-lg-9">
                 <div class="footer-contact">
-                   <?php echo get_field('address', 'option'); ?>
+                   <!-- <?php echo get_field('address', 'option'); ?>
                     <p>
                         <?php get_phone(); ?>
-                        <br />
+                        <br /> -->
                         <?php if (get_field('email_address', 'option')): 
                             echo '<a href="mailto:'. get_field('email_address', 'option') .'">';
                         else:
@@ -39,10 +39,12 @@
                 <ul class="social-icons">
                 	<?php get_social(); ?>
             	</ul>
-            	<p class="tiny">&copy; Copyright <?php echo date('Y') . ' - ' . get_field('company_name', 'option'); ?>. All Rights Reserved.</p>
+            	<p class="tiny">Author: David</p>
             </div>
             
         </div>
+    </div>
+    <div class="n7">
     </div>
 </div>
 
