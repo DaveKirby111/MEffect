@@ -10226,7 +10226,6 @@ form.search-form .search-submit:hover {
   font-family: "Sarabun", sans-serif;
   font-size: 18px;
   font-weight: 600;
-  color: #666666;
   padding: 10px 0;
 }
 .nav li a:hover {
@@ -10237,7 +10236,6 @@ form.search-form .search-submit:hover {
     padding: 0 20px;
   }
   .nav li a:hover {
-    background-color: #00acee;
     color: #fff;
     text-decoration: none;
   }
@@ -10954,27 +10952,62 @@ header {
   background-image: url("../../public/images/sunrise-copy2.jpg");
   background-size: 100% auto;
 }
-header > .row {
-  width: 100% !important;
-}
 @media screen and (min-width: 992px) {
   header {
-    background-size: 100% auto;
+    background-repeat: no-repeat !important;
   }
 }
 
 /* NAV */
+.nav li a {
+  color: blue;
+  text-shadow: 2px 5px 5px black;
+  font-size: 25px;
+}
+.nav li a:hover {
+  color: black;
+}
+
 /* CONTENT */
+.site-content {
+  color: white;
+}
 .site-content h1 {
   text-align: center;
   color: white;
+  margin-bottom: 20px;
+  font-size: 50px !important;
+}
+.site-content h2 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 30px;
 }
 .site-content p {
-  color: white;
+  margin-bottom: 20px;
+}
+.site-content figcaption {
+  text-align: center;
+  font-size: 10px;
 }
 
 .page-id-6 h1 {
   display: none;
+}
+
+.games td {
+  border: none !important;
+}
+.games img {
+  width: 800px;
+  height: 300px;
+}
+
+.shepard {
+  list-style-type: none;
+}
+.shepard li {
+  margin-bottom: 20px;
 }
 
 /* FOOTER */

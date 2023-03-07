@@ -18,10 +18,6 @@
         <div class="group row">
             <div class="col-12 col-lg-9">
                 <div class="footer-contact">
-                   <!-- <?php echo get_field('address', 'option'); ?>
-                    <p>
-                        <?php get_phone(); ?>
-                        <br /> -->
                         <?php if (get_field('email_address', 'option')): 
                             echo '<a href="mailto:'. get_field('email_address', 'option') .'">';
                         else:
