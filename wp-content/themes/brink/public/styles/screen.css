@@ -10962,7 +10962,7 @@ header {
 .nav li a {
   color: blue;
   text-shadow: 2px 5px 5px black;
-  font-size: 25px;
+  font-size: 20px;
 }
 .nav li a:hover {
   color: black;
@@ -10995,12 +10995,40 @@ header {
   display: none;
 }
 
+.page-id-95 h1 {
+  display: none;
+}
+
+.page-id-97 h1 {
+  display: none;
+}
+
+.page-id-99 h1 {
+  display: none;
+}
+
+.page-id-101 h1 {
+  display: none;
+}
+
 .games td {
   border: none !important;
 }
 .games img {
   width: 800px;
   height: 300px;
+}
+
+.chars td {
+  border: none !important;
+}
+
+.squad {
+  margin-bottom: 50px;
+}
+.squad th {
+  text-align: center;
+  font-size: 20px;
 }
 
 .shepard {
